@@ -3,6 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, sans-serif;
+}
+
+#result {
+  white-space: pre-line;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.oparete input {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid #009879;
+  border-radius: 5px;
+}
+
+.oparete div {
+  text-align: right;
+}
 a {
   text-decoration: none;
 }

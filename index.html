@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>BMI</title>
+    <title>حاسبة مؤشر كتلة الجسم</title>
   </head>
   <body>  
-    
     <div class="bmi">
-      <div class="address">ما هو  مؤشر  كتلة الجسم  (BMI) : </div>
-        <div class="content">مؤشر كتلة الجسم  (BMI) هو صيغة رياضية للتعرف على الوزن الطبيعي للشخص، وهي عبارة عن ناتج قسمة الوزن على مربع الطول بالمتر (كجم/ متر 2) <br> ( يرجى ملاحظة أن مؤشر كتلة الجسم لا يأخذ نسب الدهون). <br> ملاحظة: يستثنى من هذا الحساب كل من الأطفال أقل من 19 سنة و الحامل والرياضيين.</div>
-        <div class="download-btn">
-          <a href="./BMI.zip" download id="down-btn"><span
-                  style="font-size: 20px;font-weight: bold;">&dArr;</span></a>
-      </div>
+      <div class="address">ما هو مؤشر كتلة الجسم (BMI) : </div>
+      <div class="content">مؤشر كتلة الجسم (BMI) هو صيغة رياضية للتعرف على الوزن الطبيعي للشخص، وهي عبارة عن ناتج قسمة الوزن على مربع الطول بالمتر (كجم/ متر²)<br> (يرجى ملاحظة أن مؤشر كتلة الجسم لا يأخذ نسب الدهون). <br> ملاحظة: يستثنى من هذا الحساب كل من الأطفال أقل من 19 سنة والحوامل والرياضيين.</div>
+      
     </div>
     <div class="container">
-    
-        <table dir="rtl" class="content-table">
+      <table dir="rtl" class="content-table">
         <thead>
           <tr>
             <td colspan="2">جدول كتلة الجسم</td>
@@ -32,60 +27,53 @@
           </tr>
           <tr>
             <td class="gray">أقل من 18</td>
-            <td>نحيف &#128517  </td>
+            <td>نحيف &#128517;</td>
           </tr>
           <tr>
             <td>من 18 إلى 24.9</td>
-            <td class="gray">وزن مثالي &#128526</td>
+            <td class="gray">وزن مثالي &#128526;</td>
           </tr>
           <tr>
             <td class="gray">من 25 إلى 29.9</td>
-            <td>وزن زائد &#128515</td>
+            <td>وزن زائد &#128515;</td>
           </tr>
           <tr>
             <td>من 30 إلى 34.9</td>
-            <td class="gray">سمنة درجة أولى &#128550</td>
+            <td class="gray">سمنة درجة أولى &#128550;</td>
           </tr>
           <tr>
             <td class="gray">من 35 إلى 39.9</td>
-            <td>سمنة درجة ثانية &#128552</td>
+            <td>سمنة درجة ثانية &#128552;</td>
           </tr>
           <tr>
             <td class="tdright">من 40 فما فوق</td>
-            <td class="gray tdleft">سمنة خطيرة &#128549</td>
+            <td class="gray tdleft">سمنة خطيرة &#128549;</td>
           </tr>
         </tbody>
       </table>
       <div class="oparetor">
-        
-        <h3>BMI Calculator</h3>
-       
+        <h3>حاسبة مؤشر كتلة الجسم</h3>
         <div class="oparete">
-          
           <div>
-            <label for="l">long</label>
+            <label for="l">الطول</label>
             <br />
-            <input type="text" id="l" />
+            <input type="number" id="l" />
             <br />
-            <label for="w">weight</label>
+            <label for="w">الوزن</label>
             <br />
-            <input type="text" id="w" />
+            <input type="number" id="w" />
             <br />
-            <input type="submit" id="btn" />
+            <input type="button" id="btn" value="حساب" />
             <br />
             <h1>
-              MBI:
+              النتيجة:
               <br>
               <h2 class="" id="result"></h2>
             </h1>
           </div>
-          
         </div>
-        
       </div>
-      
     </div>
-
     <script src="./script.js"></script>
   </body>
 </html>
